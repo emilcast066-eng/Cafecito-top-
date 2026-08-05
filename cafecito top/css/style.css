@@ -1,0 +1,343 @@
+/* ===========================
+   GOOGLE FONTS
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   GENERAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f4ef;
+    color:#3d2b1f;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#4b2e2e;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 10%;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#f7d794;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../img/fondo.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+
+    font-size:70px;
+    color:white;
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    color:white;
+    font-size:22px;
+    max-width:700px;
+    margin:auto;
+
+}
+
+.boton{
+
+    display:inline-block;
+    margin-top:35px;
+
+    background:#d4a373;
+    color:white;
+
+    padding:15px 35px;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    transition:.4s;
+
+}
+
+.boton:hover{
+
+    background:#8b5e3c;
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   SECCIONES
+=========================== */
+
+section{
+
+    padding:90px 10%;
+
+}
+
+section h2{
+
+    text-align:center;
+    font-size:42px;
+    margin-bottom:40px;
+    color:#4b2e2e;
+
+}
+
+/* ===========================
+   NOSOTROS
+=========================== */
+
+.nosotros p{
+
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.contenedor-menu{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.tarjeta{
+
+background:white;
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+transition:.4s;
+
+text-align:center;
+
+}
+
+.tarjeta:hover{
+
+transform:translateY(-10px);
+
+}
+
+.tarjeta h3{
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.tarjeta p{
+
+margin-bottom:20px;
+
+}
+
+.tarjeta span{
+
+font-size:24px;
+
+font-weight:bold;
+
+color:#8b4513;
+
+}
+
+/* ===========================
+   GALERIA
+=========================== */
+
+.imagenes{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+.imagenes img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+border-radius:18px;
+
+transition:.4s;
+
+}
+
+.imagenes img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ===========================
+   UBICACION
+=========================== */
+
+.ubicacion p{
+
+text-align:center;
+
+font-size:20px;
+
+margin-bottom:30px;
+
+}
+
+/* ===========================
+   CONTACTO
+=========================== */
+
+.contacto{
+
+text-align:center;
+
+}
+
+.contacto p{
+
+font-size:22px;
+
+margin:15px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+background:#4b2e2e;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+padding:15px;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+nav a{
+
+display:inline-block;
+
+margin:10px;
+
+}
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+section h2{
+
+font-size:32px;
+
+}
+
+}
